@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Fira sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: url(image/filipp-romanovski-CZ7hM92xPsQ-unsplash.jpg);
+  color: #fff;
+}
+
+header {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #808080;
+  margin-bottom: 1rem;
+}
+
+#new-task-form {
+  display: flex;
+  /* border: 4px solid white; */
+}
+
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+#new-task-input {
+  flex: 1 1 0%;
+  background: #363436;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.25rem;
+  color: #dbd7db;
+}
+
+#new-task-input::placeholder {
+  color: #808080;
+}
+#new-task-submit {
+  color: #fff;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#new-task-submit:hover {
+  opacity: 0.8;
+}
+
+#new-task-submit:active {
+  opacity: 0.6;
+}
+main {
+  flex: 1 1 0%;
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.task-list {
+  padding: 1rem;
+  border: 2px solid red;
+}
+
+.task-list h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #808080;
+  margin-bottom: 1rem;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  background: #29292e;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid yellow;
+}
+
+#tasks {
+  border: 2px solid green;
+}
+
+#tasks .task .content .text {
+  color: #dbd7db;
+  font-size: 1.125rem;
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+  border: 2px solid white;
+}
+
+#tasks .task .content .text:not(:read-only) {
+  color: red;
+}
+
+#tasks .task .actions {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.task .actions button {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.task .actions button:hover {
+  opacity: 0.8;
+}
+.task .actions button:active {
+  opacity: 0.6;
+}
+
+.task .actions .edit {
+  color: #fff;
+}
+.task .actions .delete {
+  color: crimson;
+}
