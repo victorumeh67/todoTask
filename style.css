@@ -137,3 +137,13 @@ main {
 .task .actions .delete {
   color: crimson;
 }
+
+.error {
+  border: none;
+  color: #fff;
+  padding: 10px;
+  margin: 5px;
+  background: red;
+  animation: bounce;
+  animation-duration: 2s;
+}
