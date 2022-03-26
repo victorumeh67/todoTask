@@ -137,6 +137,11 @@ main {
   cursor: pointer;
 }
 
+.task-list .delete-ll button :hover {
+  color: blue;
+  opacity: 0.8;
+}
+
 #tasks .task .actions button:hover {
   opacity: 0.8;
 }

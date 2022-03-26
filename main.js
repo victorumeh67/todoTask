@@ -6,7 +6,7 @@ window.addEventListener('load', ()=>{
     const list_el =document.getElementById('tasks');
     const mssg = document.querySelector('.msg');
     const taskList = document.querySelector('.task-list')
-    const deleteAll = document.querySelector('delete_all')
+    const deleteAll = document.querySelector('.delete_all')
 
     
     
@@ -93,11 +93,13 @@ window.addEventListener('load', ()=>{
         })
 
 
-        // deleteAll.addEventListener('click', ()=>{
-        //     // list_el = ''
-        //     // console.log('hello')
+        deleteAll.addEventListener('click', ()=>{
+            // list_el = ''
+            list_el.removeChild(task_el)
+
             
-        // })
+            
+        })
     })  
 
 
